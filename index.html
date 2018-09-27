@@ -1,0 +1,114 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Happy birthday</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<link href="css/banner.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">Hi！老趙！</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">雖然我是一直靠著艾薇兒的生日來記住這天的，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">不過妳有事沒事就提醒我，想忘記也很困難，哈哈哈！</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">ㄛ從認識到現在應該也過了半年吧？今年真的過得很快，馬上就又要過了！</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">剛認識妳就覺得妳是個很努力的人，常常熬夜讀書到半夜，叫妳睡覺也不去睡，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">記得有一次要妳早起讀書，聽到妳說心臟很痛，就不敢在催妳了，哈哈哈！</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">越來越熟後，發現妳也和一般人一樣，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">會為了功課考試煩惱，為了朋友失落，為了工作抱怨，為了情人難過，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">雖然我也不曉得我們可以聊到多久以後，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">但是如果有任何問題或是想聊聊都可以來找我，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">也許我沒辦法解決問題，不過我猜我應該會是很好的垃圾桶，哈哈哈！</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">另外我也真的要很感謝妳，因為有妳我才有勇氣去找我朋友把話說開，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">不論結果如何，至少是劃下一個完美的句點了啦！</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">像我平常說的，事與願違才是人生嘛！</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">最後我是真的很開心認識妳這個有很多共同的喜好的朋友，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">雖然我不打lol，你不打皇室戰爭，</span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments"></span>
+				<br />
+				<span class="space" ></span>
+				<span class="comments">祝我們友誼長存！冠霖,2018/09/26</span>
+				<br />
+				<span class="comments">**/</span>
+				<br />
+			</div>
+			<div id="loveHeart">
+				<div class="coverflow">
+					</div>
+				<canvas id="garden">
+				</canvas>
+			</div>
+		</div>
+		<div id="copyright">
+			<embed src="./media/background.mp3" width="0" height="0" loop="true" volume="100"></embed>
+		</div>
+	</div>
+	<script type="text/javascript">
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+			document.execCommand("stop");
+		} else {
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+
+</html>
